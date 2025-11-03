@@ -3,7 +3,7 @@ export async function loadNavbar() {
     const navbarContainer = document.getElementById("navbar");
     if (!navbarContainer) return;
 
-    const response = await fetch("/src/components/navbar.html");
+    const response = await fetch("/public/components/navbar.html");
     if (!response.ok) throw new Error("Failed to load navbar");
 
     const html = await response.text();
