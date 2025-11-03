@@ -14,7 +14,7 @@ GlobalWorkerOptions.workerSrc = workerSrc
 // ---- Config ---------------------------------------------------------------
 // Put the PDF at: public/docs/resume.pdf   (case-sensitive on prod hosts)
 const BASE = import.meta.env.BASE_URL || '/'
-const PDF_URL = `${BASE}docs/resume.pdf`
+const PDF_URL = `${BASE}assets/Resume.pdf`
 // ---------------------------------------------------------------------------
 
 const container = document.getElementById('pdf-container') as HTMLDivElement | null
