@@ -29,6 +29,23 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 
+async function inject(targetId: string, relPath: string) {
+  const el = document.getElementById(targetId);
+  if (!el) return;
+
+  try {
+    const url = `${import.meta.env.BASE_URL}${relPath}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load ${relPath}`);
+    el.innerHTML = await res.text();
+  } catch (err) {
+    console.error(`${targetId} load error:`, err);
+  }
+}
+
+// load fragments from /public/components/*
+inject('navbar', 'components/navbar.html');
+inject('footer', 'components/footer.html');
 
 
 
