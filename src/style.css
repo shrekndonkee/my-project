@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui";
+details[open] > ul {
+  position: absolute;
+  z-index: 9999;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+

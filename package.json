@@ -1,0 +1,23 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "daisyui": "^5.3.10",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "@tsparticles/engine": "^3.9.1",
+    "pdfjs-dist": "^5.4.296",
+    "tailwindcss": "^4.1.16",
+    "tsparticles": "^3.9.1"
+  }
+}

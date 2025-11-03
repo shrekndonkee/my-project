@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Alan's Portfolio</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- NAVBAR -->
+   <div id="navbar"></div>
+   <main class="grow">
+
+
+<h1 class="text-3xl font-bold text-center p-4">Projects</h1>
+
+    <!--- PROJECT CARDS GO HERE-->
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+</style>
+
+
+
+
+
+<section class="min-h-screen bg-base-200 flex items-center justify-center p-8 transform">
+  <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Card -->
+    <a
+      href="https://calculatorpaintapp.netlify.app/"
+      target="_blank" rel="noopener noreferrer"
+      class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group"
+    >
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor1.webp"
+             alt="Project 1"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Paint and Flooring Calculator App</h2>
+          <p class="text-sm">A mock app of a practical tool using JavaScript functions.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+    
+    <a href="https://capstoneproject2024.netlify.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor2.webp" alt="Project 2"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Too Tasty Recipes</h2>
+          <p class="text-sm">A simple online recipe website, build using JSON data.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+    <a href="https://alan7220.netlify.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor3.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">TypeScript Examples</h2>
+          <p class="text-sm">A website showcasing the various functions of TypeScript.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+  <a href="https://balckjack-alan-dwdd1720.netlify.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor4.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Black Jack Web Game</h2>
+          <p class="text-sm">A simple minigame of blackjack built using JavaScript functions.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+
+
+      <a href="https://alan-todo-app.netlify.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor5.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Todo List App</h2>
+          <p class="text-sm">A functioning todo app built using TypeScript and it's own API server.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+
+      <a href="https://weathersite1720.netlify.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor6.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Weather Website</h2>
+          <p class="text-sm">A functioning realtime webstie that showcases the waether in realtime by entering a zip code.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+ <a href="https://www.figma.com/proto/8tYIoZyq0FpnOddJ9d7oR1/A11-Surface-Comps?node-id=105-1731&starting-point-node-id=1%3A13&scaling=scale-down-width&content-scaling=fixed" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor2.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">UVU Smith College of Engineering and Technology Website Redesign</h2>
+          <p class="text-sm">A redesign and prototype of the UVU CET website.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+
+     <a href="https://www.figma.com/proto/je4o5QUg5d9SsiN5i3Jdqf/Prototype-1?node-id=0-1&p=f&t=OYbLzKba0hnoFHlS-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor1.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Ruff! Rescuers App Prototype</h2>
+          <p class="text-sm">A prototype showcasing a web app design for a dog rescue shelter.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+     <a href="https://alan-3770-app.vercel.app/" target="_blank" rel="noopener noreferrer"
+       class="card fade-card bg-base-100 image-full w-80 h-[260px] sm:h-[300px] lg:h-320px shadow-md overflow-hidden transition duration-300 hover:shadow-xl active:scale-[0.98] cursor-pointer group">
+      <figure class="overflow-hidden">
+        <img src="/src/images/cardcolor4.webp" alt="Project 3"
+             class="object-cover h-full w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:brightness-110" />
+      </figure>
+      <div class="card-body flex flex-col justify-between">
+        <div>
+          <h2 class="card-title text-lg">Svelete Tutorial Website</h2>
+          <p class="text-sm">A website that teaches you about the Svelte framework showcasign examples.</p>
+        </div>
+        <p class="text-xs opacity-70">View Project →</p>
+      </div>
+    </a>
+
+
+
+
+  </div>
+</section>
+
+
+  
+</main>
+    <!-- FOOTER -->
+  <div id="footbar"></div>
+
+    <!-- Main Script -->
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".fade-card");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // only animate once
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  });
+</script>
+
+  </body>
+</html>

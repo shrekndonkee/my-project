@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Your Tailwind/daisyUI build -->
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- PDF VIEWER CARD -->
+    <div class="container mx-auto px-4 py-8">
+      <div class="card bg-base-100 shadow-lg">
+        <div class="card-body p-6">
+          <h2 class="card-title text-3xl mb-4">My Resume</h2>
+
+          <!-- Scrollable PDF container -->
+          <div id="pdf-container" class="h-[90vh] overflow-auto space-y-6">
+            <div id="pdf-loading" class="text-sm opacity-70">Loading PDF…</div>
+          </div>
+
+          <!-- Optional: download button -->
+          <div class="mt-4">
+            <a href="/casestudies/Resume.pdf" download class="btn btn-primary">Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+      <aside>
+         <p>Copyright © 2025 - All rights reserved by ACME Industries Ltd</p>
+      </aside>
+    </footer>
+
+    <!-- Main Script -->
+    <script type="module" src="/src/main.ts"></script>
+
+    <script type="module" src="/src/pages/resume.ts"></script>
+  </body>
+</html>
+
