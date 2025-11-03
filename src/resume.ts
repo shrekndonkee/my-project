@@ -9,7 +9,7 @@ loadfootbar();
 // Point PDF.js to its worker (Vite serves the URL returned by ?url)
 GlobalWorkerOptions.workerSrc = workerSrc;
 
-const url = '/casestudies/Resume.pdf'; // file must be in /public/casestudies/Resume.pdf
+const url = 'src/images/Resume (1).pdf'; 
 const container = document.getElementById('pdf-container') as HTMLDivElement | null;
 const loading = document.getElementById('pdf-loading') as HTMLDivElement | null;
 
