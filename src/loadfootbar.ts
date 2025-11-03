@@ -3,7 +3,7 @@ export async function loadfootbar() {
     const navbarContainer = document.getElementById("footbar");
     if (!navbarContainer) return;
 
-    const response = await fetch("public/components/footer.html");
+    const response = await fetch("public\components\footer.html");
     if (!response.ok) throw new Error("Failed to load footbar");
 
     const html = await response.text();
