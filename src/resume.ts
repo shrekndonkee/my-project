@@ -1,9 +1,9 @@
 // src/pages/resume.ts
 import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-dist';
 import workerSrc from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
-import { loadNavbar } from "../loadNavbar";
+import { loadNavbar } from "../src/loadNavbar";
 loadNavbar();
-import { loadfootbar } from "../loadfootbar";
+import { loadfootbar } from "../src/loadfootbar";
 loadfootbar();
 
 // Point PDF.js to its worker (Vite serves the URL returned by ?url)
