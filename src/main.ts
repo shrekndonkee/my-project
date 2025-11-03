@@ -44,8 +44,8 @@ async function inject(targetId: string, relPath: string) {
 }
 
 // load fragments from /public/components/*
-inject('navbar', 'components/navbar.html');
-inject('footer', 'components/footer.html');
+inject('navbar', 'partials/navbar.html');
+inject('footer', 'partials/footer.html');
 
 
 
